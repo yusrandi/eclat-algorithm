@@ -11,7 +11,7 @@ class PerhitunganController extends Controller
     public function index()
     {
         $data = Transaction::transaction()->groupBy('kode');
-        // return $data;
+        
         return view('pages.perhitungan');
     }
 }
